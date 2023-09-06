@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import "./App.css"
+import TopBar from "./Components/TopBar"
+import StoreListing from "./Components/StoreListing"
+import Background from "./Components/Background"
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+  return (
+    <div className="App">
+      <TopBar />
+      <Background />
+      <StoreListing />
+    </div>
+  )
+}
 
+export default App
